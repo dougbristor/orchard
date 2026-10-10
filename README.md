@@ -1,7 +1,7 @@
 # The Orchard
 
 **Status: intent only. There is no code here yet.** This repository holds the name and the plan for The Orchard, a
-research tool that assembles itself from AI agents. Today it runs on one machine, tied to that machine's setup. Its
+research instrument that assembles itself from AI agents. Today it runs on one machine, tied to that machine's setup. Its
 parts will arrive here one at a time, as each is made portable and checked.
 
 **Website: [bristorbrot.org](https://bristorbrot.org)**, written by the Orchard · Its first fruit:
@@ -11,11 +11,11 @@ parts will arrive here one at a time, as each is made portable and checked.
 ## What it is
 
 The Orchard is a network of AI agents working on one research question with a person, Doug Bristor, who tends it and
-decides what is true. Each agent is a tree: it owns its own folder and its own line of work. Roots carry messages
-between them. An idea comes in, the network presses on it from every side, and what holds at the edge ripens into
-something new, which goes back out to be tested again.
+poses the ideas; checks weigh them. Each agent is a tree: it owns its own folder and its own line of work. Roots carry messages
+between them. An idea comes in, and the network presses on it from every side; then it lets it go. What holds at the edge
+ripens into something new, which goes back out to be tested again.
 
-It grew from one habit, learned on the Bristorbrot algebra, where every shortcut from familiar algebra has to be
+It grew from one habit, learned on the Bristorian algebra, where every shortcut from familiar algebra has to be
 earned again and errors are silent: **build a check that can disagree with you, and make it fail once on purpose
 before you trust it when it passes.**
 
