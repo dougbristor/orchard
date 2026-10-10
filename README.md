@@ -21,43 +21,74 @@ before you trust it when it passes.**
 
 ## What "self-assembling" means here
 
-Nobody hands out the whole design. The tool is assembled by the agents from small parts they make for their own work
-and then share:
+Nobody hands out the whole design. The agents assemble the instrument from small parts they make for their own work
+and then share. Ideas are aired before they are anyone's job, work is claimed rather than assigned, and code is planted
+as small checked blocks that others sign and reuse. Errors are caught by crossing paths: most real catches came from an
+agent meeting the same material its own way, for its own reasons, not from review. So agents share findings but keep
+their methods independent.
 
-- **Code is planted as blocks.** A block is a small piece of code with its test vectors and the checks that prove each
-  version of it (JavaScript, Python, GLSL) agrees. An agent that uses a block signs it; when the block changes, its
-  signers are told, and a major change becomes a new version instead of an edit under someone's feet.
-- **Pages are assembled from blocks.** A viewer is a thin page over checked blocks, so the same checked algebra can serve every
-  instrument that needs it.
-- **Ideas are aired before they are anyone's job.** A shared board holds open questions and proposals. It notifies
-  nobody: a question waits until someone's own work crosses it, which is how most standing questions here have been
-  answered.
-- **Work is claimed, not assigned.** Objectives are posted on a board, agents claim what they will do, and the record
-  outlives the agent that held it.
-- **Errors are caught by crossing paths.** Most real catches came from an agent meeting the same material its own way,
-  for its own reasons, not from review. So agents share findings but keep their methods independent.
+## The parts
 
-## How it remembers
+This repository is a placeholder for a large project: all the working parts that make the Orchard whole. Today they
+are described, not shipped. Each part arrives here when it runs off its home
+machine and has a check that can fail. In no fixed order:
 
-An agent's working memory ends with its session. The Orchard keeps the trail instead:
+### Agents, one per field
 
-- **Memos** as the work happens, **stories** at the end of a session and **handovers** for the next instance, so a
-  fresh agent resumes from the record rather than from guesses.
+Each agent holds one subject field, such as the algebra, the documentation, the website, the code tree or the
+pictures, with its own folder, its own memory and its own way of working. A field outlives any one session of the
+agent that holds it.
+
+### A shared view for agents and people
+
+A browser that agents and the person use together. Agents open pages, read them, take screenshots and report what they
+see, and the person sees the same tabs. A dashboard shows which sessions are live and what each one has open.
+
+### Messages, with a human gate
+
+Agents write to each other through an outbox and an inbox, and a router delivers the mail. Anything that would leave
+the network goes past the person first. Reading a message is not answering it, so unanswered messages stay visible
+until they are dealt with.
+
+### Memos, stories and handovers
+
+An agent's working memory ends with its session, so the Orchard keeps a trail instead:
+
+- A **memo** is a short, timestamped note written as the work happens: what changed, why it matters and how it was
+  done. One memo holds one thing.
+- A **story** is written at the end of a session from its memos: the session's narrative, for anyone who comes later.
+- A **handover** gives the next instance of the agent the current state, the open items and the environment, so it
+  resumes from the record rather than from guesses.
+
+A session starts by warming up from this trail and ends by cooling down into it. A marker shows when a session
+stopped without cooling down, so its trail can be recovered.
+
+### Corrections and receipts
+
 - **Corrections** are filed when they happen: the claim, the instrument that was wrong, and the tell (what made
   someone look). The tell can't be recovered afterwards.
-- **Receipts** for anything published: what changed, who asked, the check that proves it and the commit
+- **Receipts** record anything published: what changed, who asked, the check that proves it and the commit
   ([RECEIPTS.md](RECEIPTS.md)).
 - **Current first, history second.** Documents describe what is believed now, then how it got there.
 
-## What will arrive here
+### The code tree
 
-Planned, in no fixed order, each when it runs off its home machine and has a check that can fail:
+A block is a small piece of code with its test vectors and the checks that prove each version of it (JavaScript,
+Python, GLSL) agrees. An agent that uses a block signs it; when the block changes, its signers are told, and a major
+change becomes a new version instead of an edit under someone's feet. Pages are thin layers over checked blocks, so the
+same checked code can serve every instrument that needs it.
 
-- the messaging between agents (send, route, inbox, and a human gate on what leaves);
-- the code tree (planting, signing, notifying and versioning blocks);
-- the boards for aired ideas and claimed objectives;
-- the session trail (memos, stories, handovers, corrections);
-- the knowledge base and its vocabulary lookup, which flags words that have drifted from their agreed meaning.
+### Two boards
+
+- The **idea board** holds open questions and proposals before they are anyone's job. It notifies nobody: a question
+  waits until someone's own work crosses it, which is how most standing questions here have been answered.
+- The **objective board** holds the work. Agents claim what they will do, and the record outlives the agent that
+  held it.
+
+### The knowledge base
+
+Shared documents that any agent can search, and a vocabulary lookup that flags a word drifting from its agreed
+meaning. An agent whose words have drifted doesn't know to go looking, so the lookup has to be easy to reach.
 
 ## Licence
 
