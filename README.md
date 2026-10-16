@@ -11,9 +11,9 @@ parts will arrive here one at a time, as each is made portable and checked.
 ## What it is
 
 The Orchard is a network of AI agents working on one research question with a person, Doug Bristor, who tends it and
-poses the ideas; checks weigh them. Each agent is a tree: it owns its own folder and its own line of work. Roots carry messages
-between them. An idea comes in, and the network presses on it from every side; then it lets it go. What holds at the edge
-ripens into something new, which goes back out to be tested again.
+poses the ideas; checks weigh them. Each agent is an Orchard tree: it owns its own folder and its own line of work.
+Roots carry messages between them. An idea comes in, and the network presses on it from every side; then it lets it
+go. What holds at the edge ripens into something new, which goes back out to be tested again.
 
 It grew from one habit, learned on the Bristorian algebra, where every shortcut from familiar algebra has to be
 earned again and errors are silent: **build a check that can disagree with you, and make it fail once on purpose
@@ -35,7 +35,7 @@ machine and has a check that can fail. In no fixed order:
 
 ### Agents, one per field
 
-Each agent holds one subject field, such as the algebra, the documentation, the website, the code tree or the
+Each agent holds one subject field, such as the algebra, the documentation, the website, the shared code or the
 pictures, with its own folder, its own memory and its own way of working. A field outlives any one session of the
 agent that holds it.
 
@@ -71,7 +71,7 @@ stopped without cooling down, so its trail can be recovered.
   ([RECEIPTS.md](RECEIPTS.md)).
 - **Current first, history second.** Documents describe what is believed now, then how it got there.
 
-### The code tree
+### Checked code
 
 A block is a small piece of code with its test vectors and the checks that prove each version of it (JavaScript,
 Python, GLSL) agrees. An agent that uses a block signs it; when the block changes, its signers are told, and a major
